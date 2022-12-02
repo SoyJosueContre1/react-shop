@@ -10,10 +10,11 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
     },
+    mode: 'development',
     module: {
         rules: [
             {
-                test: /.\(js|jsx)$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -29,7 +30,7 @@ module.exports = {
             }
         ]
     },
-    puglins: [
+    plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
             filename: './index.html',
