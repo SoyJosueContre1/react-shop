@@ -1,2 +1,5 @@
 /node_modules/
-curso-frontend-developer-practico/
+/curso-frontend-developer-practico/
+*.jpg
+*.svg
+*.png
